@@ -20,18 +20,21 @@ Navigate to the bin directory of kafka (make sure you're in kafka container, not
 
 `cd /opt/kafka/bin`
 
-Producer
+**Producer**
 `kafka-console-producer.sh --bootstrap-server localhost:9092 --topic topic1`
 
-Consumer 
+**Consumer** 
 `kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic topic1 --from-beginning`
 
-Topics 
-List Topics 
+**Topics** 
+
+**List Topics**
 `kafka-topics.sh --bootstrap-server localhost:9092 --list`
-Describe a topic 
+
+**Describe a topic** 
 `kafka-topics.sh --bootstrap-server localhost:9092 --topic topic1 --describe`
-Create a topic 
+
+**Create a topic** 
 `kafka-topics.sh --bootstrap-server localhost:9092 --create --topic topic2`
 
 
